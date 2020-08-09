@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  main:
+    build: ./docker/kaggle_gpu
+    volumes:
+      - .:/code
+    tty: true
+    ports:
+      - 8001:8001
